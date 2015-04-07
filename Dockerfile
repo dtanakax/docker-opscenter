@@ -6,9 +6,6 @@ MAINTAINER Daisuke Tanaka, tanaka@infocorpus.com
 
 ENV DEBIAN_FRONTEND noninteractive
 
-# add our user and group first to make sure their IDs get assigned consistently, regardless of whatever dependencies get added
-# RUN groupadd -r cassandra && useradd -r -g cassandra cassandra
-
 RUN apt-get -y update
 RUN apt-get install -y curl openssh-client supervisor \
     && rm -rf /var/lib/apt/lists/*
