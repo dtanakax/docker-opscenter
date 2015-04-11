@@ -1,12 +1,15 @@
 ![opscenter 5.1.1](https://img.shields.io/badge/opscenter-5.1.1-brightgreen.svg) ![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)
 
-# docker-opscenter
+docker-opscenter
+=====================
 
-### Base Docker Image
+Base Docker Image
+---------------------
 
 [debian:wheezy](https://registry.hub.docker.com/_/debian/)
 
-### 説明
+説明
+---------------------
 
 Cassandra OpsCenter Dockerコンテナイメージです。
 
@@ -14,7 +17,8 @@ Cassandra OpsCenter Dockerコンテナイメージです。
 [Dockerとは？](https://docs.docker.com/)  
 [Docker Command Reference](https://docs.docker.com/reference/commandline/cli/)
 
-### 使用方法
+使用方法
+---------------------
 
 git pull後に
 
@@ -24,13 +28,15 @@ git pull後に
 
     $ docker build -t tanaka0323/opscenter .
 
-### Docker Composeでの使用方法
+Docker Composeでの使用方法
+---------------------
 
 [Docker Composeとは](https://docs.docker.com/compose/)  
 
 [設定ファイル記述例](https://bitbucket.org/tanaka0323/compose-examples)
 
-### License
+License
+---------------------
 
 The MIT License
 Copyright (c) 2015 Daisuke Tanaka
