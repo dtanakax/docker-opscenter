@@ -7,7 +7,7 @@ MAINTAINER Daisuke Tanaka, tanaka@infocorpus.com
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get -y update
-RUN apt-get install -y curl openssh-client supervisor \
+RUN apt-get install -y curl openssh-client \
     && rm -rf /var/lib/apt/lists/*
 RUN apt-get clean all
 
@@ -22,10 +22,10 @@ RUN apt-get clean all
 
 # Environment variables
 ENV OPSCENTER_CONFIG    /etc/opscenter
+ENV AUTH                False
 
 # Adding the configuration file
 COPY start.sh /start.sh
-COPY supervisord.conf /etc/
 RUN chmod +x /start.sh
 
 RUN mkdir -p /usr/share/opscenter/tmp

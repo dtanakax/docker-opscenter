@@ -28,6 +28,11 @@ git pull後に
 
     $ docker build -t tanaka0323/opscenter .
 
+環境変数
+---------------------
+
+- `AUTH` Web認証機能 デフォルト`admin/admin`
+
 Docker Composeでの使用方法
 ---------------------
 
