@@ -28,6 +28,14 @@ git pull後に
 
     $ docker build -t tanaka0323/opscenter .
 
+Web認証機能
+---------------------
+
+AUTH環境変数をtrueにすることでWebUI認証機能が有効になります。  
+デフォルトID/Passは`admin/admin`です。
+
+    $ docker run -p 8888:8888 -e AUTH=true -ti tanaka0323/opscenter
+
 環境変数
 ---------------------
 
