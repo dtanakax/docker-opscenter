@@ -30,7 +30,8 @@ RUN chmod +x /start.sh
 
 RUN mkdir -p /usr/share/opscenter/tmp
 
+ENTRYPOINT ["./start.sh"]
+
 EXPOSE 8888 61620 50031
 
-# Executing sh
-ENTRYPOINT ./start.sh
+CMD ["/usr/share/opscenter/bin/opscenter", "-f"]
