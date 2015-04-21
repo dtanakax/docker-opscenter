@@ -11,7 +11,7 @@ Base Docker Image
 説明
 ---------------------
 
-Cassandra OpsCenter Dockerコンテナイメージです。
+Cassandra OpsCenter Dockerコンテナ作成設定
 
 [OpsCenterとは？](http://www.datastax.com/what-we-offer/products-services/datastax-opscenter)  
 [Dockerとは？](https://docs.docker.com/)  
