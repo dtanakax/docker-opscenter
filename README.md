@@ -1,4 +1,4 @@
-![opscenter 5.1.1](https://img.shields.io/badge/opscenter-5.1.1-brightgreen.svg) ![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)
 
 docker-opscenter
 =====================
@@ -6,27 +6,12 @@ docker-opscenter
 Base Docker Image
 ---------------------
 
-[tanaka0323/debianjp](https://registry.hub.docker.com/u/tanaka0323/debianjp/)
+[dtanakax/debianjp:wheezy](https://registry.hub.docker.com/u/dtanakax/debianjp/)
 
 説明
 ---------------------
 
 Cassandra OpsCenter Dockerコンテナ作成設定
-
-[OpsCenterとは？](http://www.datastax.com/what-we-offer/products-services/datastax-opscenter)  
-[Dockerとは？](https://docs.docker.com/)  
-[Docker Command Reference](https://docs.docker.com/reference/commandline/cli/)
-
-使用方法
----------------------
-
-git pull後に
-
-    $ cd docker-opscenter
-
-イメージ作成
-
-    $ docker build -t tanaka0323/opscenter .
 
 Web認証機能
 ---------------------
@@ -41,13 +26,6 @@ AUTH環境変数をtrueにすることでWebUI認証機能が有効になりま�
 
 - `AUTH` Web認証機能 デフォルト`admin/admin`
 
-Docker Composeでの使用方法
----------------------
-
-[Docker Composeとは](https://docs.docker.com/compose/)  
-
-[設定ファイル記述例](https://bitbucket.org/tanaka0323/compose-examples)
-
 License
 ---------------------
 
@@ -59,3 +37,24 @@ Copyright (c) 2015 Daisuke Tanaka
 上記の著作権表示および本許諾表示を、ソフトウェアのすべての複製または重要な部分に記載するものとします。
 
 ソフトウェアは「現状のまま」で、明示であるか暗黙であるかを問わず、何らの保証もなく提供されます。ここでいう保証とは、商品性、特定の目的への適合性、および権利非侵害についての保証も含みますが、それに限定されるものではありません。 作者または著作権者は、契約行為、不法行為、またはそれ以外であろうと、ソフトウェアに起因または関連し、あるいはソフトウェアの使用またはその他の扱いによって生じる一切の請求、損害、その他の義務について何らの責任も負わないものとします。
+
+The MIT License
+Copyright (c) 2015 Daisuke Tanaka
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
