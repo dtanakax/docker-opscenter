@@ -14,7 +14,7 @@ if [ "$1" = "/usr/share/opscenter/bin/opscenter" ]; then
 
     sed -i -e "s/^interface.*/interface = $IP/" /etc/opscenter/opscenterd.conf
 
-    if [ "$AUTH" = "false" ]; then
+    if [ "$AUTH" = "true" ]; then
         sed -i -e "s/^enabled = False/enabled = $AUTH/" /etc/opscenter/opscenterd.conf
     fi
 
