@@ -22,7 +22,7 @@ RUN apt-get clean all
 
 # Environment variables
 ENV OPSCENTER_CONFIG    /etc/opscenter
-ENV AUTH                False
+ENV AUTH                false
 
 # Adding the configuration file
 COPY start.sh /start.sh
