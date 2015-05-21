@@ -15,7 +15,7 @@ RUN apt-get -y update && \
 RUN echo "deb http://debian.datastax.com/community stable main" | tee -a /etc/apt/sources.list.d/datastax.sources.list
 RUN curl -L http://debian.datastax.com/debian/repo_key | apt-key add -
 
-ENV OPSCENTER_VERSION 5.1.1
+ENV OPSCENTER_VERSION 5.1.2
 
 RUN apt-get -y update && \
     apt-get install -y opscenter=${OPSCENTER_VERSION} && \
